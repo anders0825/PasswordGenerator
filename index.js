@@ -132,3 +132,7 @@ let outputFieldTwo = document.getElementById("output-field-two");
 outputFieldOne.addEventListener("click", () => {
   copyToClipboard(outputOne.textContent);
 });
+
+outputFieldTwo.addEventListener("click", () => {
+  copyToClipboard(outputTwo.textContent);
+});
