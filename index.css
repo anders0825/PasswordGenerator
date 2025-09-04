@@ -83,13 +83,14 @@ body {
   justify-content: space-evenly;
   width: 60svw;
   border-top: 2px solid #273549;
-  font-size: 18px;
-  color: #4adf86;
   font-weight: 500;
   padding-top: 25px;
 }
 
-.item-output div {
+.item-output .output-field {
+  position: relative;
+  font-size: 18px;
+  color: #4adf86;
   width: 28svw;
   min-height: 40px;
   text-align: center;
@@ -97,4 +98,24 @@ body {
   padding: 10px;
   margin: 0 10px;
   border-radius: 3px;
+}
+
+.output-field:hover {
+  background-color: #121821;
+}
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  background-color: #4adf86;
+  color: #121821;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  top: -50%;
+  right: 0;
+}
+
+.output-field:hover .popup {
+  visibility: visible;
 }

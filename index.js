@@ -117,5 +117,18 @@ function setPassword() {
   outputOne.textContent = getPassword();
   outputTwo.textContent = getPassword();
 }
+generateBtn.addEventListener("click", setPassword); // setPassord => clall on click, setPassword() => call on load
 
-generateBtn.addEventListener("click", setPassword);
+function copyToClipboard(copy) {
+  // navigator(GlobalBrowserObject)
+  // clipboard(API object in navigator)
+  // writeText(method of clipboard)
+  navigator.clipboard.writeText(copy);
+}
+
+let outputFieldOne = document.getElementById("output-field-one");
+let outputFieldTwo = document.getElementById("output-field-two");
+
+outputFieldOne.addEventListener("click", () => {
+  copyToClipboard(outputOne.textContent);
+});
