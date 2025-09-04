@@ -1,0 +1,100 @@
+/* Color Pallet
+BG; Dark Blue:          #1F2937
+Text/btn; light green   #4ADF86
+Text; Gray              #D5D4D8
+text; White             #111827
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100svw;
+  height: 100svh;
+  background-color: #35384c;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1f2937;
+  width: 75svw;
+  height: 75svh;
+  color: #e3e3e3;
+}
+
+.item-head {
+  display: flex;
+  flex-direction: column;
+  width: 60svw;
+  text-align: left;
+}
+
+.item-head h1 {
+  font-size: 40px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.item-head span {
+  color: #4adf86;
+}
+
+.item-head p {
+  color: #d5d4d8;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.item-btn {
+  width: 60svw;
+}
+
+.item-btn button {
+  color: #1f2937;
+  background-color: #4adf86;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+  width: 25svw;
+  height: 10svh;
+  max-height: 35px;
+}
+
+.item-btn button:hover {
+  background-color: #256d42;
+}
+
+.item-btn button:active {
+  background-color: #194a2d;
+}
+
+.item-output {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60svw;
+  border-top: 2px solid #273549;
+  font-size: 18px;
+  color: #4adf86;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+.item-output div {
+  width: 28svw;
+  min-height: 40px;
+  text-align: center;
+  background-color: #273549;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 3px;
+}
