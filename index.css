@@ -76,11 +76,12 @@ body {
 
 .item-btn button:active {
   background-color: #194a2d;
+  color: #07090d;
 }
 
 .item-output {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 60svw;
   border-top: 2px solid #273549;
   font-weight: 500;
@@ -96,7 +97,6 @@ body {
   text-align: center;
   background-color: #273549;
   padding: 10px;
-  margin: 0 10px;
   border-radius: 3px;
 }
 
